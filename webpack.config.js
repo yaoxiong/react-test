@@ -21,6 +21,27 @@ module.exports = {
     inline: true,
     progress: true,
   },
+  module: {
+    loaders: [
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
+        include: APP_PATH
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=40000'
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        include: APP_PATH,
+        query: {
+          presets: ['es2015']
+        }
+      },
+    ]
+  },
   //添加我们的插件 会自动生成一个html文件
   plugins: [
     new HtmlwebpackPlugin({
