@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/yaoxiong/react-test/issues"
   },
-  "homepage": "https://github.com/yaoxiong/react-test#readme"
+  "homepage": "https://github.com/yaoxiong/react-test#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
