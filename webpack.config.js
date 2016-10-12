@@ -42,6 +42,9 @@ module.exports = {
       },
     ]
   },
+  resolve: {
+      extensions: ['', '.js', '.jsx']
+  },
   //添加我们的插件 会自动生成一个html文件
   plugins: [
     new HtmlwebpackPlugin({
