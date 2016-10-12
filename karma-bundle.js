@@ -1,0 +1,1 @@
+require('./test/sub.spec.js');
